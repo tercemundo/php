@@ -1,6 +1,6 @@
 <?php
 $ip=getenv('MYSQL_SERVICE_HOST');
-$pass=getenv('DATABASE_ROOT_PASSWORD')
+$pass=getenv('DATABASE_ROOT_PASSWORD');
  $mysqli = new mysqli( $ip , 'root', $pass , 'mydatabase');
  // If an error occurs when establishing the connection
  if ($mysqli->connect_errno) {
